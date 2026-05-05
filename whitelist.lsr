@@ -1,0 +1,104 @@
+# == 苹果服务 (Apple) ==
+# Apple CDN 加速
+DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+# 苹果网络检测
+DOMAIN,captive.apple.com,DIRECT
+
+# == 腾讯系 (微信 / QQ / 腾讯地图) ==
+# 微信支付
+DOMAIN-SUFFIX,wechatpay.cn,DIRECT
+# 微信国内节点加速
+DOMAIN,szextshort.weixin.qq.com,DIRECT
+# 微信香港与海外节点
+DOMAIN,hkshort.weixin.qq.com,DIRECT
+DOMAIN,hklong.weixin.qq.com,DIRECT
+DOMAIN,hkextshort.weixin.qq.com,DIRECT
+DOMAIN,hkquic.weixin.qq.com,DIRECT
+# 微信 CDN 与静态资源 (头像、公众号图片、小程序资源)
+DOMAIN,wx.qlogo.cn,DIRECT
+DOMAIN,res.wx.qq.com,DIRECT
+DOMAIN-SUFFIX,mmbiz.qpic.cn,DIRECT
+DOMAIN,vweixinthumb.tc.qq.com,DIRECT
+# 腾讯地图
+DOMAIN,lbs.map.qq.com,DIRECT
+
+# == 阿里系 (淘宝 / 支付宝 / CDN / 数据分析) ==
+# 支付宝
+DOMAIN,amdc.alipay.com,DIRECT
+DOMAIN,collect.alipay.com,DIRECT
+DOMAIN-SUFFIX,alipay.hk,DIRECT
+# 淘宝
+DOMAIN,acs.m.taobao.com,DIRECT
+DOMAIN,amdc.m.taobao.com,DIRECT
+DOMAIN,guide-acs.m.taobao.com,DIRECT
+DOMAIN,trade-acs.m.taobao.com,DIRECT
+DOMAIN,audid-api.taobao.com,DIRECT
+DOMAIN,fourier.taobao.com,DIRECT
+# 阿里 CDN & 静态资源
+DOMAIN,asearch.alicdn.com,DIRECT
+DOMAIN,g.alicdn.com,DIRECT
+DOMAIN,hudong.alicdn.com,DIRECT
+DOMAIN,ilce.alicdn.com,DIRECT
+DOMAIN,ossgw.alicdn.com,DIRECT
+# 阿里数据统计 (mmstat)
+DOMAIN,gm.mmstat.com,DIRECT
+DOMAIN,d-gm.mmstat.com,DIRECT
+DOMAIN,log.mmstat.com,DIRECT
+DOMAIN,wgo.mmstat.com,DIRECT
+# 阿里妈妈广告联盟 (Tanx)
+DOMAIN,df.tanx.com,DIRECT
+DOMAIN,ifs.tanx.com,DIRECT
+
+# == 百度系 ==
+# 百度地图
+DOMAIN,loc.map.baidu.com,DIRECT
+DOMAIN,newvector.map.baidu.com,DIRECT
+
+# == 美团系 ==
+DOMAIN,appsec-mobile.meituan.com,DIRECT
+DOMAIN,api-unionid.meituan.com,DIRECT
+
+# == 其他国内常用 App ==
+# 12306
+DOMAIN,ad.12306.cn,DIRECT
+# 携程
+DOMAIN,m.ctrip.com,DIRECT
+# 微博
+DOMAIN,sdkapp.uve.weibo.com,DIRECT
+# 哔哩哔哩 (Bilibili)
+DOMAIN,grpc.biliapi.net,DIRECT
+# 瑞幸咖啡
+DOMAIN,capi.lkcoffee.com,DIRECT
+
+# == 银行与金融机构 ==
+# 中国银联 (云闪付)
+DOMAIN-SUFFIX,95516.com,DIRECT
+# 中国银行
+DOMAIN,openapi.boc.cn,DIRECT
+DOMAIN,mbs.boc.cn,DIRECT
+# 交通银行
+DOMAIN,creditcardapp.bankcomm.cn,DIRECT
+
+# == 系统基础服务 (网络检测 / NTP 时间 / 证书) ==
+# 微软服务 & 时间
+DOMAIN,api.appcenter.ms,DIRECT
+DOMAIN,client.wns.windows.com,DIRECT
+DOMAIN,time.windows.com,DIRECT
+DOMAIN,ntp.msn.com,DIRECT
+#DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
+#DOMAIN-SUFFIX,microsoft.com,DIRECT
+# 证书验证
+DOMAIN,ocsp2.globalsign.com,DIRECT
+DOMAIN,o.pki.goog,DIRECT
+# 火狐网络检测
+DOMAIN,detectportal.firefox.com,DIRECT
+# 开源 NTP 时间服务器
+DOMAIN-SUFFIX,pool.ntp.org,DIRECT
+
+# == 运营商与教育网 ==
+# 中国教育网
+DOMAIN-SUFFIX,edu.cn,DIRECT
+# 台湾大哥大
+DOMAIN-SUFFIX,taiwanmobile.com,DIRECT
+# Ultra Mobile (PayGo)
+DOMAIN-KEYWORD,ultramobile,DIRECT
