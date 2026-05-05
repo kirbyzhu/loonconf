@@ -1,0 +1,28 @@
+# > claude相关配置
+# > Claude AI 核心域名
+DOMAIN-SUFFIX,anthropic.com,PROXY
+DOMAIN-SUFFIX,claude.ai,PROXY
+DOMAIN-SUFFIX,claude.com,PROXY
+DOMAIN-SUFFIX,clau.de,PROXY
+DOMAIN-SUFFIX,claudemcpclient.com,PROXY
+DOMAIN-SUFFIX,claudeusercontent.com,PROXY
+# > CDN 和静态资源
+DOMAIN,servd-anthropic-website.b-cdn.net,PROXY
+DOMAIN,anthropic.com.cdn.cloudflare.net,PROXY
+# > 认证 / 内容
+DOMAIN,anthropic.auth0.com,PROXY
+DOMAIN,anthropic-com.ghost.io,PROXY
+# > 监控和遥测
+DOMAIN-SUFFIX,sentry.io,PROXY
+DOMAIN-SUFFIX,statsigapi.net,PROXY
+DOMAIN,browser-intake-us5-datadoghq.com,PROXY
+DOMAIN-KEYWORD,datadog,PROXY
+DOMAIN-KEYWORD,sift,PROXY
+# > 客服 / 第三方 widget
+DOMAIN-SUFFIX,intercom.io,PROXY
+DOMAIN-SUFFIX,intercomcdn.com,PROXY
+DOMAIN,cdn.usefathom.com,PROXY
+# > IP 段 / ASN 兜底
+IP-CIDR,160.79.104.0/21,PROXY,no-resolve
+IP-CIDR6,2607:6bc0::/32,PROXY,no-resolve
+IP-ASN,399358,PROXY,no-resolve
