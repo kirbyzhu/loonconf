@@ -1,6 +1,6 @@
 #!name=全部-广告拦截合集-重写规则
 #!desc=从Quantumult X格式转换为Loon格式
-#!author=zirawell (converted)
+#!author=ddgksf墨鱼大佬 (converted)
 
 [Rewrite]
 ^https?:\/\/2026.05.21/c414/v2.0.645 reject-200
