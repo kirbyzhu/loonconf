@@ -1,6 +1,6 @@
 #!name=Quantumult X Rewrite 转 Loon
 #!desc=由上传的 Quantumult X 重写片段转换生成，包含去开屏广告类 Rewrite、Script、Rule 与 MitM。
-#!author=Converted by ChatGPT
+#!author=ddgksf墨鱼大佬 (去开屏2.0 2026-05-28)Converted by ChatGPT
 #!tag=去广告,重写,QuantumultX转换
 #!system=iOS,iPadOS
 #!loon_version=3.2.1(730)
