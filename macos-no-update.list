@@ -1,0 +1,37 @@
+# =====================================================================
+# macOS Auto-Update Block List
+# Format     Clash / Mihomo rule-provider (behavior: classical, format: text)
+# Version    2026.06.03
+# Scope      仅阻断系统更新相关核心域名,不影响 App Store / iMessage / iCloud
+# Usage
+#   rule-providers:
+#     macos-no-update:
+#       type: http
+#       behavior: classical
+#       format: text
+#       url: "<本文件托管 URL>"
+#       path: ./ruleset/macos-no-update.list
+#       interval: 604800
+#   rules:
+#     - RULE-SET,macos-no-update,REJECT
+# =====================================================================
+
+# ---- 更新元数据与推送 ----
+DOMAIN,mesu.apple.com
+DOMAIN,gdmf.apple.com
+
+# ---- 更新分发与下载 ----
+DOMAIN,swcdn.apple.com
+DOMAIN,swdist.apple.com
+DOMAIN,swdownload.apple.com
+DOMAIN,swquery.apple.com
+DOMAIN,swscan.apple.com
+
+# =====================================================================
+# 可选扩展条目 (默认未启用,需要更彻底阻断时取消注释)
+# 注意 启用以下条目可能影响 App Store 应用更新或恢复模式
+# =====================================================================
+# DOMAIN,osrecovery.apple.com          # Internet Recovery 模式
+# DOMAIN,updates.cdn-apple.com         # 应用更新 CDN (同时影响 App Store 应用下载)
+# DOMAIN,updates-http.cdn-apple.com    # HTTP 更新 CDN
+# DOMAIN,xp.apple.com                  # 推送配置 (可能影响 iMessage/FaceTime 设备识别)
